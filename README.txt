@@ -14,12 +14,13 @@ Install
 Run
 python hibuddy_storecount_scraper.py --input "assortment_shaped.xlsx" --interactive-setup
 
-Common options
---verify-top-k 5
---early-stop-score 60
---match-threshold 42
---capture-prices
---no-block-images   (only if you need to troubleshoot rendering)
+python hibuddy_storecount_scraper_copy.py \
+  --input assortment_ON.xlsx \
+  --output hibuddy_storecounts.xlsx \
+  --profile-dir hibuddy_profile \
+  --parallel --workers 5 \
+  --interactive-setup
+
 
 Notes
 - Use the interactive setup once to set Location=Calgary, Alberta, Canada and Radius=50 km.
